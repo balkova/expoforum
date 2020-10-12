@@ -1,0 +1,137 @@
+.side-menu{
+    background: linear-gradient(180deg, #2378FC 0%, #0045B0 100%);
+
+    &-inner{
+        width: 100%;
+        max-width: 1110px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+    &__col{
+        max-width: 210px;
+        width: 100%;
+    }
+
+    &__title{
+        font-family: 'Plumb';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+    }
+
+    &__list{
+        list-style-type: none;
+        padding: 0;
+        margin-top: 30px;
+    
+
+        & li:not(:last-child){
+            padding-bottom: 15px;
+        }
+    }
+
+    &__link{
+        font-family: 'Circe';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 135%;
+        transition: .2s linear;
+
+        &:hover{
+            color: #FFC41E;
+            text-decoration-line: underline;
+        }
+    }
+}
+
+@media (max-width: 1110px) {
+    .side-menu{
+        &-inner{
+            padding: 60px 15px;
+            max-width: 992px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .side-menu{
+        &-inner{
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 95%;
+        }
+        &__col{
+            max-width: 250px;
+
+            &:nth-child(3){
+                margin-top: 20px;
+            }
+            &:nth-child(4){
+                margin-top: 20px;
+            }
+            &:nth-child(odd){
+                margin-right: 30px;
+            }
+        }
+        &__list{
+            margin-top: 20px;
+        }
+        &__link{
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .side-menu{
+        display: none;
+        /*&__col{
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            &:not(:first-child){
+                margin-top: 20px;
+            }
+            &:nth-child(odd){
+                margin-right: 0;
+            }
+        }*/
+        
+    }
+}
+
+/*@media (max-width: 450px) {
+    .side-menu{
+        &-inner{
+            max-width: 85%;
+        }
+    }
+}*/
+
+/*@media (max-width: 420px) {
+    .side-menu{
+        &-inner{
+            padding: 40px 15px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .side-menu{
+    
+        &__title{
+            font-size: 26px;
+        }
+        &__link{
+            font-size: 18px;
+        }
+    }
+}*/

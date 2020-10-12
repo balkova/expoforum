@@ -1,0 +1,43 @@
+@import "libs";
+@import "header";
+@import "fonts";
+@import "screen-about";
+@import "company";
+@import "side-menu";
+@import "events";
+@import "events-item";
+@import "news";
+@import "news-item";
+@import "footer";
+@import "form";
+
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background-color: #FFF;
+  margin: 0;
+  color: #fff;
+}
+      
+img {
+  width: 100%;
+}
+  
+a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.arrow{
+  height: 8px;
+  width: 16px;
+  margin-left: 10px;
+  transition: .3s linear;
+}
+
+
+    
+
+  
+    

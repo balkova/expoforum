@@ -1,0 +1,99 @@
+.screen-about {
+  width: 100%;
+  max-width: 1110px;
+  margin: 0 auto; }
+  .screen-about__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .screen-about__title {
+    font-family: 'Plumb';
+    font-weight: 800;
+    font-size: 64px;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    margin-bottom: 35px; }
+  .screen-about__text {
+    font-family: 'Circe';
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 25px;
+    max-width: 533px; }
+  .screen-about__link {
+    font-family: 'Montserrat';
+    font-weight: normal;
+    font-size: 16px; }
+    .screen-about__link:hover .screen-about__link-img {
+      margin-left: 15px; }
+  .screen-about__right {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 50%; }
+
+/*Mobile*/
+@media (max-width: 1110px) {
+  .screen-about {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 992px; }
+    .screen-about__right {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; } }
+
+@media (max-width: 992px) {
+  .screen-about {
+    max-width: 95%; } }
+
+@media (max-width: 900px) {
+  .screen-about__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .screen-about__right {
+    width: 70%;
+    margin-top: 20px; } }
+
+@media (max-width: 768px) {
+  .screen-about__right {
+    width: 90%; } }
+
+@media (max-width: 575px) {
+  .screen-about__title {
+    font-size: 64px; }
+  .screen-about__text {
+    font-size: 30px; }
+  .screen-about__link {
+    font-size: 20px; } }
+
+@media (max-width: 450px) {
+  .screen-about {
+    max-width: 85%; }
+    .screen-about__title {
+      font-size: 40px; }
+    .screen-about__text {
+      font-size: 24px; }
+    .screen-about__link {
+      font-size: 18px; } }
+
+@media (max-width: 375px) {
+  .screen-about__title {
+    font-size: 42px; }
+  .screen-about__text {
+    font-size: 20px; } }
+
+@media (max-width: 320px) {
+  .screen-about__text {
+    font-size: 18px; }
+  .screen-about__link {
+    font-size: 16px; } }

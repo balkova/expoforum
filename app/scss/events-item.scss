@@ -1,0 +1,142 @@
+.events-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+}
+
+.events-row{
+    display: flex;
+
+    &:last-child{
+        padding-top: 40px;
+    }
+}
+
+.events-item{
+    width: 100%;
+    max-width: 350px;
+    color:  #2E373B;
+    transition: .2s linear;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
+    &:hover{
+        box-shadow: 10px 2px 10px rgba(0,0,0,0.5);
+        .events-item__title{
+            color: #d10516;
+            font-weight: 600;
+        }
+    }
+
+
+    &__date{
+        font-family: 'Circe';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 135%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    &__title{
+        font-family: 'Plumb';
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 130%;
+        letter-spacing: -0.01em;
+        color: #F6404F;
+        transition: .1s linear;
+    }
+
+    &__description{
+        font-family: 'Circe';
+        font-size: 16px;
+        line-height: 135%;
+        padding-top: 10px;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .events-row{
+        justify-content: center;
+    }
+    .events-item{
+        max-width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .events-row{
+        flex-wrap: wrap;
+    }
+    .events-item{
+        max-width: 500px;
+
+        &:not(:last-child){
+            margin-right: 0;
+        }
+        &:not(:first-child){
+            margin-top: 40px;
+        }
+
+        &__date{
+            font-size: 20px;
+        }
+    
+        &__title{
+            font-size: 28px;
+        }
+    
+        &__description{
+            font-size: 22px;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .events-item{
+        max-width: 300px;
+
+        &:not(:first-child){
+            margin-top: 40px;
+        }
+
+        &__date{
+            font-size: 16px;
+        }
+    
+        &__title{
+            font-size: 24px;
+        }
+    
+        &__description{
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .events-item{
+        &__date{
+            padding-top: 10px;
+            padding-bottom: 7px;
+        }
+        &__description{
+            padding-top: 7px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .events-item{
+        &__date{
+            font-size: 14px;
+        }
+    }
+}

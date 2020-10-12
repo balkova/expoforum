@@ -1,0 +1,82 @@
+.events {
+  background: #FFC41E;
+  color: #2E373B; }
+  .events-inner {
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 79px; }
+  .events__top {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .events__title {
+    font-family: 'Plumb';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: -0.01em; }
+  .events__more__link {
+    font-family: 'Plumb';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #2E373B;
+    text-decoration: underline;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear; }
+    .events__more__link:hover {
+      text-decoration: none; }
+
+@media (max-width: 1110px) {
+  .events-inner {
+    max-width: 992px;
+    padding: 60px 15px; } }
+
+@media (max-width: 992px) {
+  .events-inner {
+    max-width: 95%; } }
+
+@media (max-width: 700px) {
+  .events__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .events__title {
+    font-size: 36px; }
+  .events__more {
+    margin-top: 20px;
+    font-size: 24px; } }
+
+@media (max-width: 450px) {
+  .events-inner {
+    max-width: 85%; } }
+
+@media (max-width: 420px) {
+  .events-inner {
+    padding: 40px 15px; }
+  .events__title {
+    font-size: 26px; }
+  .events__more {
+    font-size: 18px; } }

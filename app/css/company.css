@@ -1,0 +1,82 @@
+.company {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  /*margin-top: 304px;*/ }
+  .company-item-wrapper {
+    width: 100%;
+    max-width: 255px; }
+    .company-item-wrapper:nth-child(1) {
+      background-color: #2378FC;
+      margin-bottom: 30px; }
+    .company-item-wrapper:nth-child(2) {
+      background-color: #30BCC9;
+      margin-bottom: 30px; }
+    .company-item-wrapper:nth-child(3) {
+      background-color: #FFC41E; }
+    .company-item-wrapper:nth-child(4) {
+      background-color: #F6404F; }
+    .company-item-wrapper:nth-child(odd) {
+      margin-right: 30px; }
+  .company-item {
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 30px; }
+    .company-item__title {
+      font-family: 'Plumb';
+      font-weight: normal;
+      font-size: 21px;
+      line-height: 130%;
+      padding-bottom: 15px; }
+    .company-item__link {
+      font-family: 'Circe';
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 135%; }
+      .company-item__link:hover .company-item__link-img {
+        margin-left: 15px; }
+
+@media (max-width: 1110px) {
+  .company-item-wrapper {
+    max-width: 200px; }
+  .company-item {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px; }
+    .company-item__title {
+      font-size: 18px;
+      padding-bottom: 15px; }
+    .company-item__link {
+      font-size: 12px;
+      line-height: 135%; } }
+
+@media (max-width: 900px) {
+  .company-item-wrapper {
+    max-width: 230px; }
+  .company-item {
+    padding: 20px; }
+    .company-item__title {
+      font-size: 18px;
+      padding-bottom: 15px; }
+    .company-item__link {
+      font-size: 12px;
+      line-height: 135%; } }
+
+@media (max-width: 768px) {
+  .company-item__title {
+    font-size: 20px; }
+  .company-item__link {
+    font-size: 16px; } }
+
+@media (max-width: 575px) {
+  .company {
+    display: none; } }
